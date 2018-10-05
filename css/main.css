@@ -1,0 +1,118 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100px;
+    background-color: darkred;
+}
+section{
+    position: absolute;
+    top: 100px;
+    left: 20%;
+    width: 80%;
+    height: 592px;
+    background-color: darkslategrey;
+}
+aside{
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    width: 20%;
+    height: 592px;
+    background-color: darkgoldenrod;
+}
+a{
+    text-decoration: none;
+    outline: none;
+    color: #C4C4C4;
+    width: 10px;
+}
+header > a{
+    color: #C4C4C4;
+    margin: 40px;
+    position: relative;
+    top: 40%;
+    left: 6%;
+}
+header > a:hover, header > a:active, a:hover{
+    color: #fff;
+}
+aside > div, section > div{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.folder{
+    margin-top: 5px;
+    padding: 15px;
+    height: 30%;
+    text-align: center;
+}
+a > img{
+    padding: 15px;
+}
+.bg-modal, .bg-modal1{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.modal-content, .modal-content1{
+    width: 500px;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 4px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+.btn{
+    border-radius: 5px;
+    height: 30px;
+    width: 75px;
+    background-color: darkred;
+    border: 1px solid darkred;
+    color: white;
+    margin-left: 5px;
+}
+.txt{
+    border-radius: 5px;
+    height: 30px;
+    width: 50%;
+    border: 1px solid darkred;
+    font-size: smaller;
+}
+form > label{
+    font-size: larger;
+    margin-right: 30px;
+}
+form{
+    margin-top: 20px;
+    position: relative;
+    top: 20%;
+}
+.close{
+    position: absolute;
+    top: 0;
+    right: 14px;
+    font-size: 42px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+.alert{
+    width: 500px;
+    background-color: #CCC;
+    color: #f00;
+    border: 1px solid #f00;
+    text-align: center;
+    margin-bottom: 25px;
+}
