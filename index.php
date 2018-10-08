@@ -16,7 +16,7 @@
          <a href="#" id="upload"><i class="fas fa-cloud-upload-alt fa-lg"></i></a>
          <a href="<?php $url?>" download=""><i class="fas fa-cloud-download-alt fa-lg"></i></a>
          <a href="#"><i class="fas fa-cut fa-lg"></i></a>
-         <a href="#"><i class="fas fa-copy fa-lg"></i></a>
+         <a href="#" id="copy"><i class="fas fa-copy fa-lg"></i></a>
          <a href="#"><i class="fas fa-paste fa-lg"></i></a>
          <a href="#" id="sup"><i class="fas fa-trash-alt fa-lg"></i></a>
          <a href="#"><i class="fas fa-info-circle fa-spin fa-lg"></i></a>
@@ -48,12 +48,24 @@
 
      <div class="bg-modal1">
          <div class="modal-content1">
-             <div class="close">+</div>
+             <div class="close1">+</div>
              <h1>Upload de fichier</h1>
              <form action="upload.php" method="post" enctype="multipart/form-data">
                  <label for="">Dossier ou Fichier</label>
                  <input type="file" name="file" id="file"><br><br>
                  <input type="submit" value="Uploader" class="btn" name="upload" id="upload">
+             </form>
+         </div>
+     </div>
+
+     <div class="bg-modal2">
+         <div class="modal-content2">
+             <div class="close2">+</div>
+             <h1>Copier un dossier ou un fichier</h1>
+             <form action="copier.php" method="post">
+                 <input type="text" placeholder="Nom du fichier a copier" class="txt" name="doc1"><br><br>
+                 <input type="text" placeholder="Nom du nouveau fichier" class="txt" name="doc2"><br><br>
+                 <input type="submit" value="Copier" class="btn" name="copy" id="copy">
              </form>
          </div>
      </div>
